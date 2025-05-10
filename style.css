@@ -1,0 +1,24 @@
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f4f7fc; color: #333; padding: 20px; }
+    button { background: #0069d9; color: #fff; border: none; border-radius: 4px; padding: 6px 10px; font-size: 14px; transition: background .2s; cursor: pointer; }
+    button:hover { background: #0053ba; }
+    #addTimelineBtn { margin-bottom: 12px; }
+    table { border-collapse: collapse; width: 100%; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+    th, td { border: 1px solid #e1e5ea; padding: 10px; vertical-align: top; }
+    thead { background: #eef1f7; }
+    th { font-weight: 600; }
+    tr:nth-child(even) { background: #fafbfc; }
+    .controls-cell { width: 220px; white-space: nowrap; }
+    .controls-cell input { width: 100%; padding: 4px 6px; margin: 4px 0 8px; border: 1px solid #ccd0d9; border-radius: 4px; }
+    .controls-cell button { margin-top: 6px; margin-right: 4px; }
+    .timeline-items { display: grid; grid-auto-rows: auto; gap: 8px; max-height: 180px; overflow-y: auto; padding-right: 4px; }
+    .timeline-item { position: relative; padding: 8px 12px; background: #e9f5ff; border: 1px solid #b3dbff; border-radius: 4px; display: flex; align-items: center; resize: horizontal; overflow: auto; min-width: 50px; transition: background .2s, border-color .2s, box-shadow .2s; }
+    .timeline-item:hover { background: #d0eaff; border-color: #8ccfff; }
+    .timeline-item span { outline: none; font-size: 14px; }
+    .timeline-item.selected { box-shadow: 0 0 0 3px rgba(255,165,0,0.8); }
+    .remove-btn { position: absolute; top: -8px; right: -8px; background: #dc3545; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+    .timeline-items::-webkit-scrollbar { width: 6px; }
+    .timeline-items::-webkit-scrollbar-thumb { background: #c1c7cd; border-radius: 3px; }
+    .timeline-items::-webkit-scrollbar-track { background: #f4f7fc; }
+    .item-group { background: #ffe8cc !important; border-color: #ffb74d !important; flex-wrap: wrap; }
+    .item-group button { margin: 2px 0 0 4px; padding: 2px 6px; font-size: 10px; }
